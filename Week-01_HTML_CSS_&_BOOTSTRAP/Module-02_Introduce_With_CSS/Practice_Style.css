@@ -16,29 +16,102 @@ body
 }
 
 .intro
-        {
-            color: brown;
-            font-size: 60px;
-            font-weight: bold;
-            font-style: italic;
-            text-align: right;
-            font: #53545E;
-            background: linear-gradient(90deg,blue,yellow);
-        }
-        .explain
-        {
-            color: darkblue;
-            line-height: 1.8em;
-        }
-        #test
-        {
-            color:color-mix(in srgb, color percentage, color percentage);
-        }
-        p
-        {
-            color: chocolate;
-        }
-        p
-        {
-            color:bisque;
-        }
+{
+    color: brown;
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: right;
+    font: #53545E;
+    background: linear-gradient(90deg,blue,yellow);
+}
+.explain
+{
+    color: darkblue;
+    line-height: 1.8em;
+}
+#test
+{
+    color:color-mix(in srgb, color percentage, color percentage);
+}
+p
+{
+    color: chocolate;
+}
+p
+{
+    color:#FF2424;
+}
+
+/* BOX MODEL CSS */
+.BOX
+{
+    color: aqua;
+    width: 100px;
+    height: 100px;
+    border: 6px,dotted,black;
+    padding: 10px;
+    margin: 20px;
+    margin-right: 4px;
+    margin-top: 4px;
+    background-color: #2A2B31;
+    box-shadow: 4px 4px 20px gray;
+}
+
+/* FontAwsome CSS */
+.this
+{
+    padding: 60px;
+    background-color: color-mix(in srgb, color percentage, color percentage);
+    width: 50px;
+    margin: 40px;
+    border: 6px solid black;
+}
+
+/* Sub FontAwsome CSS */
+.good
+{
+    padding: 50%;
+    background-color: rgb(red green blue / alpha);
+    width: 50px;
+    height: 40px;
+    text-align: center;
+}
+
+
+/* Block Line to In Line convert CSS */
+.st
+{
+    display: inline;
+}
+.nd
+{
+    display: inline;
+}
+.rd
+{
+    display: inline;
+}
+
+/* Applying flex to togather too many Block line element easyly */
+.box
+{
+    width: 200px;
+    height: 100px;
+    border: 4px solid black;
+    margin: 5px;
+}
+
+/* Container Into Flex */
+.contaner
+{
+    display: flex;
+    justify-content: space-around;  /*space arround use for distance between boxs*/
+  justify-content: center;  /*for center/right/left/up/bottom*/
+  /* also have justify-content for- space-between, space-evenly*/
+  gap: 4px;
+  flex-direction: row-reverse; /*if you want change direction box*/
+  height: 100vh;
+  align-items: center;
+  flex-wrap: wrap; /*for box wrap*/
+}

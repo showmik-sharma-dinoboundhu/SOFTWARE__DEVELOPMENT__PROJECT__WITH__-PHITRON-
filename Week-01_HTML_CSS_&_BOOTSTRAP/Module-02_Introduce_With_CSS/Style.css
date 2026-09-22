@@ -16,39 +16,118 @@ body
   font-style: normal;
   font-variation-settings:"wdth" 100;
 }
-    .title 
-    {
-        color: #0442D0;
-        font-size: 60px;
-        font-weight: bold;
-        font-style: italic;
-        text-align: center;
-        font: Playwrite Cuba;
-        background: linear-gradient(45deg,red,green);
-    }
-    .description
-    {
-        color: rgb(from color r g b);
-        line-height: 1.5em;
-    }
-    #test
-    {
-        color:blue;
-    }
-    p
-    {
-        color: goldenrod;
-    }
-    p
-    {
-        color: brown;
-    }
+.title 
+{
+  color: #0442D0;
+  font-size: 60px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  font: Playwrite Cuba;
+  background: linear-gradient(45deg,red,green);
+}
+.description
+{
+  color: rgb(from color r g b);
+  line-height: 1.5em;
+}
+#test
+{
+  color:blue;
+}
+p
+{
+  color: goldenrod;
+}
+p
+{
+  color: brown;
+}
+
+/* Box Model */
+.box
+{
+    width: 40px;
+    height: 40px;
+    border: 1px,solid,gray;     /*border- border pixel(size), boder type, border coloer */
+    border: 5px,dotted,gray;     /*border- border pixel(size), boder type, border coloer */
+    padding: 10px;                 /*padding estimate how much distance you want maintain from border*/
+    
+    
+    /* more model of padding */
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    /* Don't write too many padding if you want to move from every side */
+    /* Just write */
+    padding: 60px;
+
+    /* If you want to move margin or box from any side */
+    margin: 80px;
+    background-color: #606287;
+
+    /* Box Shadow  */
+    box-shadow: 20px 20px 28px gray;   
+}
+
+/* FontAwsome Icon CSS */
+.test
+{
+    padding: 50px;
+    background-color: aquamarine;
+    border: 4px solid black;
+    width: 50%;
+    text-align: center;
+    margin: auto;           /*Margin for box alignment*/
+
+}
+
+/* Sub FontAwsome Icon HTML */
+.bye
+{
+    padding: 20px;
+    background-color: #D1E7FD;
+    width: auto;
+    border: 4px dotted #8B959B;
+    height: fit-content;
+}
+
+/* Block Line Element In Same Line: */
+.first
+{
+  display: inline;
+}
+.second
+{
+  display: inline;
+}
+.third
+{
+  display:inline;
+}
 
 
+/* Applying flex to togather too many Block line element easyly */
+.boxer
+{
+  width: 200px;
+  height: 100px;
+  border: 4px solid black;
+  margin: 5px;
+}
 
-
-
-
-
-
-
+/* Flex int a container */
+.container
+{
+  display: flex;
+  justify-content: space-around;  /*space arround use for distance between boxs*/
+  justify-content: center;  /*for center/right/left/up/bottom*/
+  /* also have justify-content for- space-between, space-evenly*/
+  gap: 4px;
+  flex-direction: row-reverse; /*if you want change direction box*/
+  height: 100vh;
+  align-items: center;
+  flex-wrap: wrap; /*for box wrap*/
+}
