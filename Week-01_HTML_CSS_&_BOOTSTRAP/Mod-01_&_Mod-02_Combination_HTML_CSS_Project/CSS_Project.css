@@ -1,0 +1,102 @@
+/* ওয়েবসাইটের বর্ডারের সাথে একেবারে ঘেঁষে থাকার জন্য */
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+.navbarcontainer
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1EBABC;
+}
+
+/* logo design */
+.logo
+{
+    width: 100px;
+}
+/* Menu design */
+.menuscontainer
+{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 22px;
+    color: white;
+}
+
+/* Doctor photo set up */
+.banner_image
+{
+    width: 90%;
+}
+
+/* Banner Design */
+.banner_container
+{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+}
+
+/* Title design */
+.title
+{
+    font-size: 76px;
+    font-weight: bold;
+    color: #1EBABC;
+    text-align: center;
+    
+}
+
+/* Paragraph desing */
+.description
+{
+    font-size: 22px;
+}
+
+/* Button design */
+button
+{
+    padding: 15px 25px;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+.app_btn
+{
+    background-color: #1EBABC;
+}
+.doc_btn
+{
+    background-color: #5B9EA3;
+}
+
+/* Section box desgin */
+.service_card
+{
+    width: 380px;
+    height: 380px;
+    box-shadow: 8px 8px 16px gray;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.service
+{
+    width: 100px;
+}
+
+.cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}

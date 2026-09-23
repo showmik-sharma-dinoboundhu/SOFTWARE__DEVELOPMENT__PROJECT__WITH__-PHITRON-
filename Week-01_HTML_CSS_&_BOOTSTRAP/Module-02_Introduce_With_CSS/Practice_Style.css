@@ -115,3 +115,41 @@ p
   align-items: center;
   flex-wrap: wrap; /*for box wrap*/
 }
+
+/* Practice CSS */
+.box1
+{
+    background-color: #53545E;
+    position: absolute;
+}
+.box2
+{
+    background-color: darkorchid;
+    position: relative;
+    margin-top: 60px;
+}
+.box3
+{
+    background-color: darkslategray;
+    margin-top: 5px;
+}
+
+/* Lets make a bd national flag */
+.green
+{
+    width: 500px;
+    height: 250px;
+    background-color: green;
+    margin: 20px;
+    position: relative;
+}
+.red
+{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50px;
+    top: 75px;
+    left: 190px;
+}
