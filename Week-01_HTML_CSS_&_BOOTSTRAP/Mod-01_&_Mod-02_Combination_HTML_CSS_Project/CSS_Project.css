@@ -100,3 +100,64 @@ button
     justify-content: center;
     gap: 20px;
 }
+
+/* Contact form */
+.contact_container
+{
+    text-align: center;
+}
+
+.input_box
+{
+    padding: 15px 30px;
+    margin: 10px;
+}
+
+.text_area
+{
+    padding: 20px 40px;
+    margin: 10px;
+}
+
+/* submit button */
+.submit_btn
+{
+    padding: 10px 10px;
+    margin: 10px;
+    width: 20%;
+    margin-top: 20px;
+    background-color: #1EBABC;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
+/* Footer Section */
+.footer_section
+{
+    background-color: #1EBABC;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.description
+{
+    font-size: medium;
+    width: 25%;
+    box-sizing: border-box;
+}
+.point
+{
+    font-size: medium;
+    width: 25%;
+    box-sizing: border-box;
+}
+.word_bold
+{
+    color: white;
+}
+.horizontal
+{
+    width: 100%;
+    text-align: center;
+}
