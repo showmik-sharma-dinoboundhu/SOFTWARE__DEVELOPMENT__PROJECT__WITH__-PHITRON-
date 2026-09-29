@@ -16,6 +16,7 @@
     <!-- <h1 class="text-danger"> Hi!!</h1> -->
 
     <header>
+        <!-- Navigation -->
         <nav class="row m-auto p-2 bg-info ">
             <div class="logocontainer col-md-6">
                 <img class="w-25 m-auto d-flex justify-content-center" src="Photo/Logo-1.png" alt="">
@@ -29,6 +30,7 @@
             </div>
         </nav>
 
+        <!-- Banner -->
         <div class="banner_container row container m-auto d-flex align-items-center">
             <div class="banner_left col-md-6">
                 <h1 class="title">Make you appointment now</h1>
@@ -46,6 +48,85 @@
             <div class="banner_right col-md-6">
                 <img class="img-fluid w-100" src="Photo/Doctor.jfif" alt="">
             </div>
+        </div><br><br>
+
+        <!-- Services -->
+        <h1 class="title text-center">Our Services</h1>
+        <div class="services_container row container m-auto">
+            <div class="box col-md-4 mb-5">
+                <div class="card text-center p-3" style="width: 18rem;">
+                <img class="img-fluid w-50 m-auto" src="Photo/allergies.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Allergies</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+                </div>
+            </div>
+
+            
+            <div class="box col-md-4 mb-5">
+                <div class="card text-center p-3" style="width: 18rem;">
+                <img class="img-fluid w-50 m-auto" src="Photo/Dairehha.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dairehha</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+                </div>
+            </div>
+
+            
+            <div class="box col-md-4 mb-5">
+                <div class="card text-center p-3" style="width: 18rem;">
+                <img class="img-fluid w-25 m-auto d-flex" src="Photo/blood_pressure.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Blood-Pressure</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+
+        <!-- Contact -->
+        <div class="contact_container container w-75 m-auto">
+            <h1 class="title text-center p-5">Contact With Us</h1>
+            <form>
+            <div class="mb-3">
+                <label for="write you name" class="form-label">Your Full Name</label>
+                <input type="text" class="form-control" id="write your name" aria-describedby="emailHelp" required placeholder="write you name">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="write your mail">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" required placeholder="please input your password">
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+
+            <!-- Select tag -->
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">Alergies</option>
+                <option value="2">Dairehha</option>
+                <option value="3">Blood-Pressure</option>
+            </select>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
 
     </header>
