@@ -1,0 +1,46 @@
+body
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.banner_container
+{
+    height: 100vh;
+    background-image: url(Photo/Background_Image.jpg),
+    linear-gradient(#86787B);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Responsive desingn phn, tab, pc */
+/* for everyone */
+.title
+{
+    color: rebeccapurple;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+/* phn, tab it shows other color */
+@media only screen and (max-width: 480px)
+{
+    .title
+    {
+        color: green;
+    }
+}
+
+/* For tab */
+@media only screen and (min-width:481px) and (max-width:768px)
+{
+    .title
+    {
+        color: goldenrod;
+        font-size: 80px;
+        display: none;      /*Letter hide*/
+        display: block;     /*Letter show*/
+    }
+}

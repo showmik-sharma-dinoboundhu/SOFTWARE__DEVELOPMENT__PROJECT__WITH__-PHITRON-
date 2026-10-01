@@ -1,0 +1,155 @@
+/* body
+{
+    background-color: rgb(from color r g b)
+} */
+/* CSS Import file*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100..900&family=Roboto:ital@0;1&display=swap');
+
+/* CSS link file */
+body
+{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
+
+.intro
+{
+    color: brown;
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: right;
+    font: #53545E;
+    background: linear-gradient(90deg,blue,yellow);
+}
+.explain
+{
+    color: darkblue;
+    line-height: 1.8em;
+}
+#test
+{
+    color:color-mix(in srgb, color percentage, color percentage);
+}
+p
+{
+    color: chocolate;
+}
+p
+{
+    color:#FF2424;
+}
+
+/* BOX MODEL CSS */
+.BOX
+{
+    color: aqua;
+    width: 100px;
+    height: 100px;
+    border: 6px,dotted,black;
+    padding: 10px;
+    margin: 20px;
+    margin-right: 4px;
+    margin-top: 4px;
+    background-color: #2A2B31;
+    box-shadow: 4px 4px 20px gray;
+}
+
+/* FontAwsome CSS */
+.this
+{
+    padding: 60px;
+    background-color: color-mix(in srgb, color percentage, color percentage);
+    width: 50px;
+    margin: 40px;
+    border: 6px solid black;
+}
+
+/* Sub FontAwsome CSS */
+.good
+{
+    padding: 50%;
+    background-color: rgb(red green blue / alpha);
+    width: 50px;
+    height: 40px;
+    text-align: center;
+}
+
+
+/* Block Line to In Line convert CSS */
+.st
+{
+    display: inline;
+}
+.nd
+{
+    display: inline;
+}
+.rd
+{
+    display: inline;
+}
+
+/* Applying flex to togather too many Block line element easyly */
+.box
+{
+    width: 200px;
+    height: 100px;
+    border: 4px solid black;
+    margin: 5px;
+}
+
+/* Container Into Flex */
+.contaner
+{
+    display: flex;
+    justify-content: space-around;  /*space arround use for distance between boxs*/
+  justify-content: center;  /*for center/right/left/up/bottom*/
+  /* also have justify-content for- space-between, space-evenly*/
+  gap: 4px;
+  flex-direction: row-reverse; /*if you want change direction box*/
+  height: 100vh;
+  align-items: center;
+  flex-wrap: wrap; /*for box wrap*/
+}
+
+/* Practice CSS */
+.box1
+{
+    background-color: #53545E;
+    position: absolute;
+}
+.box2
+{
+    background-color: darkorchid;
+    position: relative;
+    margin-top: 60px;
+}
+.box3
+{
+    background-color: darkslategray;
+    margin-top: 5px;
+}
+
+/* Lets make a bd national flag */
+.green
+{
+    width: 500px;
+    height: 250px;
+    background-color: green;
+    margin: 20px;
+    position: relative;
+}
+.red
+{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50px;
+    top: 75px;
+    left: 190px;
+}
