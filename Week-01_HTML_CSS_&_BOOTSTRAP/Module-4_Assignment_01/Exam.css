@@ -1,0 +1,29 @@
+.title
+{
+    background-color: #1A1A8C;
+}
+
+.slide
+{
+    background-color: rgb(249,209,247);
+}
+
+.first img,
+.second img {
+    width: 150px;
+}
+
+.first-text,
+.second-text {
+    width: 250px;
+}
+
+.first-text h1,
+.second-text h1 {
+    font-size: 25px;
+}
+
+.first-text p,
+.second-text p {
+    font-size: 14px;
+}
