@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Link up with css -->
+    <link rel="stylesheet" href="Exam.css">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        .top-bar {
+            background-color: #1a1a8c;
+        }
+        .top-bar a {
+            color: #fff;
+            font-size: .75rem;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ================= Navigation bar ================= -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">
+                    <img src="resources/Group 2.png" style="height: 30px;" alt="Logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainMenu">
+
+                    <form class="d-flex mx-lg-auto my-2 my-lg-0" role="search">
+                        <div class="input-group">
+                            <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+                            <input type="search" class="form-control" placeholder="Search">
+                        </div>
+                    </form>
+
+                    <ul class="navbar-nav mx-lg-auto">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    </ul>
+
+                    <div class="top-bar d-flex justify-content-center align-items-center gap-4 py-2 px-3">
+                        <a href="#"><i class="bi bi-cart"></i></a>
+                        <a href="#"><i class="bi bi-person"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- ================= Slider or Carousel Section ================= -->
+    <div id="carouselExample" class="carousel slide">
+
+        <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="row align-items-center text-center text-md-start mx-0 px-4 px-md-5 py-4">
+
+                    <!-- Text -->
+                    <div class="col-12 col-md-6">
+                        <p class="text-dark">Pro.Beyond</p>
+                        <h1 class="text-dark">I Phone 18 Pro</h1>
+                        <p class="text-dark">
+                            Created to change everything for the better.
+                            For everyone.
+                        </p>
+                        <button type="button" class="btn" style="background-color: #1a1a8c; color: #fff;">Shop Now</button>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="col-12 col-md-6 mt-3 mt-md-0">
+                        <img src="resources/Iphone Image.png"
+                             class="d-block mx-auto ms-md-auto me-md-0 img-fluid"
+                             style="max-height: 300px;"
+                             alt="I Phone 18 Pro">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="row align-items-center mx-0 px-4 px-md-5 py-4">
+                    <div class="col-12">
+                        <img src="resources/Iphone 14 pro 1-3.png"
+                             class="d-block mx-auto img-fluid"
+                             style="max-height: 300px;"
+                             alt="I Phone 14 Pro">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <div class="row align-items-center mx-0 px-4 px-md-5 py-4">
+                    <div class="col-12">
+                        <img src="resources/Iphone 14 pro 1-2.png"
+                             class="d-block mx-auto img-fluid"
+                             style="max-height: 300px;"
+                             alt="I Phone 14 Pro">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Previous Button -->
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <!-- Next Button -->
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+
+
+    <!-- ================= Banner Section ================= -->
+    <div class="three-banner container-fluid px-3 px-md-5 my-4">
+        <div class="row g-3">
+
+            <!-- First two (left side) -->
+            <div class="two-banner col-12 col-lg-6">
+
+                <!-- First -->
+                <div class="first row align-items-center g-2 mb-3 mx-0 p-3 bg-light">
+                    <!-- Image -->
+                    <div class="col-12 col-md-6 text-center">
+                        <img src="resources/ipad.png" class="img-fluid" style="max-height: 200px;" alt="I-pad">
+                    </div>
+                    <!-- Text -->
+                    <div class="first-text col-12 col-md-6">
+                        <h1>iPad 9</h1>
+                        <p>
+                            The Apple iPad 9th Generation is an entry-level 10.2-inch tablet featuring the A13 Bionic chip, a classic home button with Touch ID, and a 12MP ultra-wide front camera with Center Stage.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Second -->
+                <div class="second row align-items-center g-2 mx-0 p-3" style="background-color: rgb(173,194,215);">
+                    <!-- Image -->
+                    <div class="col-12 col-md-6 text-center">
+                        <img src="resources/Iphone 14 pro 1.png" class="img-fluid" style="max-height: 200px;" alt="Apple Ear-phones">
+                    </div>
+                    <!-- Text -->
+                    <div class="second-text col-12 col-md-6">
+                        <h1>Apple Ear Pods Max</h1>
+                        <p>
+                            You can buy the updated model or check specifications directly from the Apple AirPods Max official page.
+                            The Apple AirPods Max (including the newer generation with the H2 chip and USB-C support) provide high-fidelity over-ear sound.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Third (right side) -->
+            <div class="col-12 col-lg-6">
+                <div class="third-banner row align-items-center g-2 mx-0 p-3 h-100" style="background-color: rgb(237,237,237);">
+
+                    <!-- Text -->
+                    <div class="third-text col-12 col-md-6">
+                        <h1>Macbook Air</h1>
+                        <p>
+                            The Apple MacBook Air is a thin, lightweight, and fanless consumer laptop line from Apple available in 13-inch and 15-inch screen sizes.
+                        </p>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="col-12 col-md-6 text-center">
+                        <img src="resources/Group 6.png" class="img-fluid" alt="Macbook Air">
+                    </div>
+
+                    <div class="col-12 text-center text-md-end">
+                        <button type="button" class="btn px-4" style="background-color: #1a1a8c; color: #fff;">Shop Now</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ================= Browse By Category ================= -->
+    <p class="mx-3 mx-md-5 mt-4"><b>Browse By Category</b></p>
+
+    <div class="container">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
+
+            <!-- Phone card -->
+            <div class="col">
+                <div class="card text-center border-0 bg-light py-4 h-100">
+                    <img src="resources/phones.png" class="mx-auto mb-2" style="width: 40px;" alt="Phones">
+                    <div class="card-body">
+                        <p class="card-text mb-0">Phones</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Watch card -->
+            <div class="col">
+                <div class="card text-center border-0 bg-light py-4 h-100">
+                    <img src="resources/watch.png" class="mx-auto mb-2" style="width: 40px;" alt="Smart Watches">
+                    <div class="card-body">
+                        <p class="card-text mb-0">Smart Watches</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Camera card -->
+            <div class="col">
+                <div class="card text-center border-0 bg-light py-4 h-100">
+                    <img src="resources/camera.png" class="mx-auto mb-2" style="width: 40px;" alt="Cameras">
+                    <div class="card-body">
+                        <p class="card-text mb-0">Cameras</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Computer card -->
+            <div class="col">
+                <div class="card text-center border-0 bg-light py-4 h-100">
+                    <img src="resources/Computer.png" class="mx-auto mb-2" style="width: 40px;" alt="Computers">
+                    <div class="card-body">
+                        <p class="card-text mb-0">Computers</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game card -->
+            <div class="col">
+                <div class="card text-center border-0 bg-light py-4 h-100">
+                    <img src="resources/Game.png" class="mx-auto mb-2" style="width: 40px;" alt="Gamings">
+                    <div class="card-body">
+                        <p class="card-text mb-0">Gamings</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ================= Sell Section (tabs) ================= -->
+    <ul class="nav nav-underline mx-3 mx-md-5 mt-4 gap-3 flex-nowrap overflow-x-auto" id="productTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active text-nowrap" data-bs-toggle="tab" data-bs-target="#new-arrival" type="button" role="tab">New Arrival</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link text-nowrap" data-bs-toggle="tab" data-bs-target="#bestseller" type="button" role="tab">Bestseller</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link text-nowrap" data-bs-toggle="tab" data-bs-target="#featured" type="button" role="tab">Featured Products</button>
+        </li>
+    </ul>
+
+    <!-- Tab content -->
+    <div class="tab-content mx-3 mx-md-5 mt-3">
+
+        <!-- New arrival product -->
+        <div class="tab-pane fade show active" id="new-arrival" role="tabpanel">
+
+            <div class="row row-cols-2 row-cols-lg-4 g-3">
+
+                <div class="col">
+                    <div class="card text-center border-0 bg-light py-4 h-100">
+                        <img src="resources/Iphone 14 pro 1-2.png" class="mx-auto mb-2" style="width: 100px;" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Apple Present iPhone 18 Pro <br> 128 GB Deep Purple <br> (MQ9T3RX/A) <br> <b>$900</b> <br>
+                                <button type="button" class="btn btn-primary mt-2" style="background-color: rgb(0,0,0);">Buy Now</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-center border-0 bg-light py-4 h-100">
+                        <img src="resources/Iphone 14 pro 1-3.png" class="mx-auto mb-2" style="width: 100px;" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Blackmagic Pocket Cinema <br> Camera 6k <br> <b>$2535</b> <br>
+                                <button type="button" class="btn btn-primary mt-2" style="background-color: rgb(0,0,0);">Buy Now</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-center border-0 bg-light py-4 h-100">
+                        <img src="resources/Iphone 14 pro 1-1.png" class="mx-auto mb-2" style="width: 100px;" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Apple Watch Series 9 GPS <br> 41mm Starlight Aluminium <br> Case <br> <b>$399</b> <br>
+                                <button type="button" class="btn btn-primary mt-2" style="background-color: rgb(0,0,0);">Buy Now</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-center border-0 bg-light py-4 h-100">
+                        <img src="resources/Iphone 14 pro 1.png" class="mx-auto mb-2" style="width: 100px;" alt="">
+                        <div class="card-body">
+                            <p class="card-text">AirPods Max Silver <br> <b>$549</b> <br>
+                                <button type="button" class="btn btn-primary mt-2" style="background-color: rgb(0,0,0);">Buy Now</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="bestseller" role="tabpanel">Bestseller er product gula...</div>
+        <div class="tab-pane fade" id="featured" role="tabpanel">Featured product gula...</div>
+    </div>
+
+
+    <!-- ================= Discount Section ================= -->
+    <div class="discount-display d-flex flex-column flex-md-row justify-content-between align-items-center mx-3 mx-md-5 mt-4 px-4 py-3" style="background-color: rgb(149,138,212);">
+
+        <!-- left img -->
+        <img src="resources/image 19.png" class="img-fluid d-none d-md-block" style="max-height: 300px;" alt="">
+
+        <!-- Middle Explanation -->
+        <div class="explain text-center px-md-4">
+            <h1 class="fw-bolder" style="color: #1a1a8c;"> <b>11.11 </b> <b style="color: #fff;">Sale</b></h1>
+            <p>E-commerce giant Alibaba transformed the date into a massive commercial shopping event in 2009, turning it into a global retail phenomenon that now dwarfs Black Friday and Cyber Monday in sales volume.</p>
+        </div>
+
+        <!-- right img -->
+        <img src="resources/ipada_a_l.webp" class="img-fluid" style="max-height: 300px;" alt="">
+    </div>
+
+
+    <!-- ================= Footer Section ================= -->
+    <footer class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-4 mx-3 mx-md-5 px-4 py-4" style="background-color: rgb(14,45,87);">
+
+        <!-- Img section -->
+        <img src="resources/Group 2.png" style="height: 50px;" alt="Logo">
+
+        <!-- Social Media Section -->
+        <div class="d-flex align-items-center gap-3">
+            <img src="resources/facebook.png" style="height: 15px;" alt="Facebook">
+            <img src="resources/youtube.png" style="height: 15px;" alt="YouTube">
+            <img src="resources/twitter.png" style="height: 15px;" alt="Twitter">
+            <img src="resources/tiktok.png" style="height: 15px;" alt="TikTok">
+        </div>
+
+        <!-- Service -->
+        <ul class="list-unstyled mb-0 text-center text-md-start" style="color:#fff;">
+            <li style="font-weight: 100;">Services</li>
+            <li>Bonus program</li>
+            <li>Gift Cards</li>
+            <li>Credit and Payment</li>
+            <li>Service Contracts</li>
+            <li>Non-cash Account</li>
+            <li>Payment</li>
+        </ul>
+
+        <!-- About -->
+        <ul class="list-unstyled mb-0 text-center text-md-start" style="color: #fff;">
+            <li style="font-weight: 100;">Find and order</li>
+            <li>Assistance to the buyer</li>
+            <li>Terms of delivery</li>
+            <li>Exchange and return of goods</li>
+            <li>Guarantee</li>
+            <li>Frequently asked questions</li>
+            <li>Terms of use of the site</li>
+        </ul>
+    </footer>
+
+
+    <!-- Bootstrap Script file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
