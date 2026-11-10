@@ -26,6 +26,22 @@
     {% endif %}
 
 
+    {% comment %} Django Tamplate filtering using built in from google earthly {% endcomment %}
+    {{List1}}
+    <h1> {{ List1 | join:" - " }} </h1>
+
+    <h1> {{Birthdate|date:"SHORT_DATE_FORMAT"}} </h1>
+
+    {% comment %} Cut Filter {% endcomment %}
+     <h1>{{"Python is Fun" | cut:" "}}</h1>
+
+    {% comment %} Length Filter {% endcomment %}
+    <h1>{{ val | length }}</h1>
+
+    {% comment %} Truncatechars Filter {% endcomment %}
+    <h1>{{'Happy coding. Python is fun. is not it?' | truncatechars:6}}</h1>
+
+
     {% comment %} For Loop {% endcomment %}
     {% for i in Courses %}
         <h3>{{i.id}} {{i.name}} {{i.fee}}</h3>
