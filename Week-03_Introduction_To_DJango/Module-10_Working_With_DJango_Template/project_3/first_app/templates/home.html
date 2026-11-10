@@ -10,5 +10,30 @@
     <h2>Author : {{Author}}</h2>
     <h2>Age : {{Age}}</h2>
     <h2>{{List}}</h2>
+
+
+
+    {% comment %} Conditional Statement {% endcomment %}
+    {% if Age >= 20 %}
+        <h4>You are adult. You will get licesene</h4>
+
+    {% elif Age >= 10 and Age <= 19 %}
+        <h4>You won't get lincesense</h4>
+
+    {% else %}
+        <h4>Your're a child</h4>
+    
+    {% endif %}
+
+
+    {% comment %} For Loop {% endcomment %}
+    {% for i in Courses %}
+        <h3>{{i.id}} {{i.name}} {{i.fee}}</h3>
+    {% endfor %}
+    
+
+
+    
+
 </body>
 </html>
