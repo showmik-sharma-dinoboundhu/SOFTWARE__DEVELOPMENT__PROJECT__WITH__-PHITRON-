@@ -40,5 +40,9 @@ def index(request):
     "body": "so that the body of these is despised, nothing who provides for the pursuit of\nsoftness for us, something of annoyance,\nperceives and no one from reproaches the accusers, which\npleasure pains will and pain and annoyance"
   }]
     
-    
     return render(request, 'index.html', {'data': data})
+  
+  
+  
+def about(request):
+    return render(request, 'index.html')
