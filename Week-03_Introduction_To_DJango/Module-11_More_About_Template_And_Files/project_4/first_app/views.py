@@ -44,5 +44,5 @@ def index(request):
   
   
   
-def about(request):
-    return render(request, 'index.html')
+def about(request, id):
+    return render(request, 'index.html', {'id' : id})
