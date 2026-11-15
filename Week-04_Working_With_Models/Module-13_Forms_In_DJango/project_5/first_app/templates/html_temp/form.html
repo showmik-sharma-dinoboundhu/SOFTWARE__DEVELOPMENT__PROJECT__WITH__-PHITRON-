@@ -2,13 +2,14 @@
 
 {% block content %}
     <form method="post">
+        {% csrf_token %}
         <div class="mb-3">
                 <label for="exampleInput Name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="exampleInput Name" aria-describedby="nameHelp">
+                <input type="text" class="form-control" id="exampleInput Name" aria-describedby="nameHelp" name='username'>
         </div>
         <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name='email'>
         </div>
         <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
@@ -16,4 +17,7 @@
         </div>
         <button type="submit" class="btn-solid theme-primary">Submit</button>
     </form>
+
+    <h4>Name {{name}}</h4>
+    <h4>Email {{email}}</h4>
 {% endblock  %}
