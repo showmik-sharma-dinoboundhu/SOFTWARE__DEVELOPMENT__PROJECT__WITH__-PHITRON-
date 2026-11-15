@@ -1,7 +1,7 @@
 {% extends "home.html" %}
 
 {% block content %}
-    <form method="post">
+    <form method="post" action="/first_app/about/">
         {% csrf_token %}
         <div class="mb-3">
                 <label for="exampleInput Name" class="form-label">Name</label>
