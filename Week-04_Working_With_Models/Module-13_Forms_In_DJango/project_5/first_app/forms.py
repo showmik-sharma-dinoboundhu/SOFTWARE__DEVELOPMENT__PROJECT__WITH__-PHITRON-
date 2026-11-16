@@ -9,3 +9,11 @@ class contactForm(forms.Form):
     check = forms.BooleanField()
     birthday = forms.DateField()
     appointment = forms.DateTimeField()
+    
+    # Choiches:
+    CHOICES = [("S", "Small"), ("M", "Medium"), ("L", "Large")]
+    size = forms.ChoiceField(choices=CHOICES)
+    
+    # Multiple variable user choose:
+    MEAL = [("P", "Pepperoni"), ("M", "Mashroom"), ("Mtn", "Mutton")]
+    pizza = forms.MultipleChoiceField(choices=MEAL)
