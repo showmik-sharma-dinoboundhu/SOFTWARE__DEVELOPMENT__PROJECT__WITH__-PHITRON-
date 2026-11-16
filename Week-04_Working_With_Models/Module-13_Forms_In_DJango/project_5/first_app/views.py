@@ -23,5 +23,7 @@ def form(request):
 
 
 def django_form(request):
-    form = contactForm()
+    form = contactForm(request.POST)
+    if form.is_valid():
+        print(form.cleaned_data)
     return render(request,'./html_temp/django_form.html', {"form" : form}) # type: ignore
