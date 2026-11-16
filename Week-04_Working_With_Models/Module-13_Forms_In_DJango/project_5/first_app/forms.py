@@ -2,6 +2,13 @@ from django import forms
 
 class contactForm(forms.Form):
     name = forms.CharField(label="User Name")
+    
+    # Files Uploads- PDF to everything:
+    file = forms.FileField()
+    
+    
+    
+    
     email = forms.EmailField(label="User Email")
     age = forms.IntegerField()
     weight = forms.FloatField()
