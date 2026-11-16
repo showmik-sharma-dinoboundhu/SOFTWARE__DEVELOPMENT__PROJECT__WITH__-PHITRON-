@@ -36,7 +36,10 @@ def django_form(request):
         form = contactForm(request.POST, request.FILES)
         if form.is_valid():
             file = form.cleaned_data['file']
-            print(file)
+            with open("./first_app/upload/" + file.name, "wb+") as destination:
+                for chunks in file.chunks():
+                    print(chunks)
+            print(form.cleaned_data)
         return render(request, './html_temp/django_form.html', {"form": form})
     
     else:

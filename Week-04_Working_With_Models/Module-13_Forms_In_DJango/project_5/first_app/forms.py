@@ -1,7 +1,7 @@
 from django import forms
 
 class contactForm(forms.Form):
-    name = forms.CharField(label="User Name")
+    name = forms.CharField(label="Full Name : ", initial="Showmik", help_text="Enter you full name within 70 characters")
     
     # Files Uploads- PDF to everything:
     file = forms.FileField()
