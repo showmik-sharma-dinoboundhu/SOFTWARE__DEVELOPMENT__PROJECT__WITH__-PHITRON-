@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from forms import contactForm
 
 # Create your views here.
 def index(request):
@@ -19,3 +20,8 @@ def about(request):
 def form(request):
     return render(request, './html_temp/form.html')
 
+
+
+def DJangoForm(request):
+    form = contactForm()
+    return render(request,'.html_temp/django_form.html', {"form" : form}) # type: ignore
