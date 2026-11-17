@@ -81,9 +81,32 @@ class contactForm(forms.Form):
 #         return cleaned_data
         
         
-class studentData(forms.Form):
-    name = forms.CharField(widget=forms.TextInput, validators=[validators.MaxLengthValidator(10, message="Enter a name with only between 10 characters")])
-    Name = forms.CharField(widget=forms.TextInput, validators=[validators.MinLengthValidator(10, message="Enter a name with minimum 10 characters")])
-    email = forms.CharField(widget=forms.EmailInput, validators=[validators.EmailValidator(message="Enter a valid email with @ and full stop(.)")])
-    age = forms.IntegerField(widget=forms.NumberInput, validators=[validators.MaxValueValidator(34, message="Age must be max 34"), validators.MinValueValidator(24, message="Age must be atleast 24")])
-    file = forms.FileField(validators=[validators.FileExtensionValidator(allowed_extensions=["pdf","png", "jpg", "jpeg"], message="File extension must be ended with .pdf")])
+# class studentData(forms.Form):
+#     name = forms.CharField(widget=forms.TextInput, validators=[validators.MaxLengthValidator(10, message="Enter a name with only between 10 characters")])
+#     Name = forms.CharField(widget=forms.TextInput, validators=[validators.MinLengthValidator(10, message="Enter a name with minimum 10 characters")])
+#     email = forms.CharField(widget=forms.EmailInput, validators=[validators.EmailValidator(message="Enter a valid email with @ and full stop(.)")])
+#     age = forms.IntegerField(widget=forms.NumberInput, validators=[validators.MaxValueValidator(34, message="Age must be max 34"), validators.MinValueValidator(24, message="Age must be atleast 24")])
+#     file = forms.FileField(validators=[validators.FileExtensionValidator(allowed_extensions=["pdf","png", "jpg", "jpeg"], message="File extension must be ended with .pdf")])
+    
+    
+    
+    
+    
+    # Pass word validation project:
+class PasswordValidationProject(forms.Form):
+    name = forms.CharField(widget=forms.TextInput)
+    password = forms.CharField(widget=forms.PasswordInput)
+    conform_password = forms.CharField(widget=forms.PasswordInput)
+    
+    def clean(self): # type: ignore
+        cleaned_data = super().clean()
+        val_pass = self.cleaned_data["password"]
+        val_conpass = self.cleaned_data["confirm_password"]
+        
+        val_name =self.cleaned_data["name"]
+        
+        if val_conpass != val_pass:
+            raise forms.ValidationError("Password doesn't match")
+        
+        if len(val_name) < 16:
+            raise forms.ValidationError("Name must be atleast 16 characters")
