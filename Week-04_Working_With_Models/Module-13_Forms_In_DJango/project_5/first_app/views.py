@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .forms import contactForm
+from .forms import studentData
 
 # Create your views here.
 def index(request):
@@ -30,19 +31,35 @@ def form(request):
 
 
 # Best Approch:
+# def django_form(request):
+#     form = contactForm()
+#     if(request.method == "POST"):
+#         form = contactForm(request.POST, request.FILES)
+#         if form.is_valid():
+#             # file = form.cleaned_data['file']
+#             # with open("./first_app/upload/" + file.name, "wb+") as destination:
+#             #     for chunks in file.chunks():
+#             #         print(chunks)
+#             print(form.cleaned_data)
+#         return render(request, './html_temp/django_form.html', {"form": form})
+    
+#     else:
+#         form = contactForm()
+    
+#     return render(request, './html_temp/django_form.html', {"form": form})
+
+
+
+
+# StudentData:
 def django_form(request):
-    form = contactForm()
+    form = studentData()
     if(request.method == "POST"):
-        form = contactForm(request.POST, request.FILES)
+        form = studentData(request.POST)
+        
         if form.is_valid():
-            # file = form.cleaned_data['file']
-            # with open("./first_app/upload/" + file.name, "wb+") as destination:
-            #     for chunks in file.chunks():
-            #         print(chunks)
             print(form.cleaned_data)
-        return render(request, './html_temp/django_form.html', {"form": form})
     
-    else:
-        form = contactForm()
-    
-    return render(request, './html_temp/django_form.html', {"form": form})
+    return render(request, "./html_temp/django_form.html", {"form" : form})
+
+
