@@ -11,6 +11,25 @@
 <body>
     <h1>This Is Home Page For Practice. Welcome To Our Page.</h1>
 
+    <table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Roll</th>
+      <th scope="col">Name</th>
+      <th scope="col">Father Name</th>
+      <th scope="col">Mother Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    {% for i in studentForm %}
+      <th scope="row">{i.roll}</th>
+      <td>i.name</td>
+      <td>i.father_name</td>
+      <td>i.mother_name</td>
+      {% endfor %}
+    </tr>
+</table>
 
 
 
