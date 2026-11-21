@@ -15,3 +15,5 @@ class posts(models.Model):
     # title show
     def __str__(self):
         return self.title
+    
+    
