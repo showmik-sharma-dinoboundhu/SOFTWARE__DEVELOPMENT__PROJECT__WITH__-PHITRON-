@@ -7,4 +7,6 @@ class author(models.Model):
     phone_num = models.CharField(max_length=11)
     
     
+    def __str__(self):
+        return self.name
     

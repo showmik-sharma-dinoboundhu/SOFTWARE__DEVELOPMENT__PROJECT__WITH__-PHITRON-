@@ -10,3 +10,8 @@ class posts(models.Model):
     catagories = models.ManyToManyField(categories)  # ekta post multiple categories er modde thakte pare abr ekta catagories te multiple post thakte pare
     
     author = models.ForeignKey(author, on_delete=models.CASCADE)
+    
+    
+    # title show
+    def __str__(self):
+        return self.title
