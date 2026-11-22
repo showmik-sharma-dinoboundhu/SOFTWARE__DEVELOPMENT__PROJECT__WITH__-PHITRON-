@@ -5,11 +5,11 @@
     {% comment %} <h1>This is Add Author Page.</h1> {% endcomment %}
     {% comment %} {{form}} {% endcomment %}
 
-<form style="width: 50%; margin: auto">
+<form style="width: 50%; margin: auto" method='post'>
         <h1>This is Add Author Page.</h1>
         {% csrf_token %}
         {{form | crispy}}
-        <button type="button" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
 {% endblock %}
