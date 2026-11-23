@@ -24,4 +24,4 @@ def add_author(request):
        author_form = forms.authorForm()    
        
          
-    return render(request, 'add_author.html', {'form' : author_form})
+    return render(request, 'add_author.html', {'form' : author_form}) 
