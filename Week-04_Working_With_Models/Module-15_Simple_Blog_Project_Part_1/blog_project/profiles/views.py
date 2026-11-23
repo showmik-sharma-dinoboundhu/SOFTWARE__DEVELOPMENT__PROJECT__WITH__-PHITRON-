@@ -6,7 +6,7 @@ def add_profiles(requeest):
     # return render (requeest, 'add_profiles')
     
     
-    # Backend work ----> Author er form er data save
+    # Backend work ----> profiles er form er data save
         # POST request hole:
         if requeest.method == "POST":
             profiles_form = forms.profilesForm(requeest.POST)
