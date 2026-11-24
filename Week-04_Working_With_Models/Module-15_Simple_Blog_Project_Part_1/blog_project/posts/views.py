@@ -50,4 +50,8 @@ def edit_posts(request, id):
     return render (request, 'add_posts.html', {'form' : posts_form})
  
  
- 
+
+def delete_post(request,id):
+        post = models.posts.objects.get(pk = id) #pk = pirmary key
+        post.delete()
+        return redirect('homepage')
