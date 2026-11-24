@@ -4,7 +4,7 @@ from author.models import author
 
 # Create your models here.
 class posts(models.Model):
-    title = models.CharField(max_length=50)
+    title = models.CharField(max_length=100)
     content = models.TextField()
     
     catagories = models.ManyToManyField(categories)  # ekta post multiple categories er modde thakte pare abr ekta catagories te multiple post thakte pare
