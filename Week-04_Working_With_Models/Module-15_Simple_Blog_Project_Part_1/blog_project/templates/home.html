@@ -15,16 +15,17 @@
                         Categories:
 
                         {% for cat in post.catagories.all %}
-                            <button class="btn btn-warning" disabled>
+                            <button class="btn btn-primary btn-sm m-2" disabled>
                                 {{ cat.name }}
                             </button>
                         {% empty %}
-                        <button class="btn btn-warning" disabled>
+                        <button class="btn btn-primary btn-sm m-2" disabled>
                                 No categories found!
                         </button>
                         {% endfor %}
                     </p>
-                    <a href="#" class="btn btn-primary mt-auto w-100">Go somewhere</a>
+                    <a href="{% url "edit_posts" post.id %}" class="btn btn-warning mt-auto w-100">Edit</a>
+                    <a href="#" class="btn btn-danger">Delete</a>
                 </div>
             </div>
         </div>
