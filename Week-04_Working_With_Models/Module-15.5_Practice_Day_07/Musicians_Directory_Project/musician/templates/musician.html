@@ -2,7 +2,7 @@
 {% block content %}
 {% load crispy_forms_tags %}
 
-<form style="width: 50; margin : auto">
+<form style="width: 50; margin : auto" method="POST">
     {% csrf_token %}
     <h1>This is Musician Page.</h1>
     {{form | crispy}}
