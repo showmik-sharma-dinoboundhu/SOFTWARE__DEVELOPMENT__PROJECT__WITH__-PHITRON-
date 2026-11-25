@@ -5,7 +5,7 @@ from musician.models import musician
 class album(models.Model):
     album_name = models.CharField(max_length=50)
     musician = models.ForeignKey(musician,on_delete=models.CASCADE)
-    album_relase_date = models.DateField(auto_now=True)
+    album_relase_date = models.DateField()
     rating = models.CharField(max_length=5)
     
     
