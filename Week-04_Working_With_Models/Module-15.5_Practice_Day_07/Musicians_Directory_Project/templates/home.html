@@ -9,7 +9,29 @@
       <div class="card-body">
         <h5 class="card-title">{{i.album_name}}</h5>
         <p class="card-text">{{i.musician}}</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+
+        <p> Singer, Writer and Composer : {{i.musician.first_name}} {{i.musician.last_name}}</p>
+
+
+        {% comment %} Normal way of button Instruments: {% endcomment %}
+        {% comment %} <p> Instruments: 
+            <button class="btn btn-warning btn-sm m-2" disabled>
+              {{i.musician.instrument_type}}
+            </button>
+        </p> {% endcomment %}
+
+
+        {% comment %} Diferent way of print button Instruments: {% endcomment %}
+        <p>
+          {% for j in i.instruments %}
+             <button class="btn btn-warning btn-sm m-2" disabled>
+                {{j}}
+              </button>
+          {% endfor %}
+        </p>
+
+        <a href="#" class="btn btn-primary">Edit</a>
+        <a href="#" class="btn btn-primary">Delete</a>
       </div>
     </div>
   </div>

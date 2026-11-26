@@ -8,4 +8,10 @@ def home(request):
     # frontend work:
     data = album.objects.all()
     print(data)
+    
+    # comma diye jonto instrument ache tader k alada alada kore alada button e rakhar jonno code:
+    for i in data:
+        i.instruments = i.musician.instrument_type.split(',')
+    
+    
     return render(request, 'home.html', {"data" : data})
