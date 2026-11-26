@@ -55,7 +55,7 @@ def edit_album(request, id):
     return render(request, 'album.html', {"form" : album_form})
 
 
-def delete_post(request, id):
+def delete_album(request, id):
     # delete things:
     albums = models.album.objects.get(pk = id)
     albums.delete()
