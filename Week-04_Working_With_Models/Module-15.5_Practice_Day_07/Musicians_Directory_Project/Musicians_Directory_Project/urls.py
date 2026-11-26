@@ -20,7 +20,7 @@ from .import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='homepage'),
+    path('', views.home, name='homepage'), # pyright: ignore[reportCallIssue] # type: ignore
     path('album/', include('album.urls')),
     path('musician/', include('musician.urls')),
 ]
