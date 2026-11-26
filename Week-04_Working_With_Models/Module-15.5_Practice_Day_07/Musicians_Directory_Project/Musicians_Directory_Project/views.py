@@ -11,7 +11,7 @@ def home(request):
     
     # comma diye jonto instrument ache tader k alada alada kore alada button e rakhar jonno code:
     for i in data:
-        i.instruments = i.musician.instrument_type.split(',')
+        i.instruments = i.musician.instrument_type.split(',') # type: ignore
     
     
     return render(request, 'home.html', {"data" : data})
