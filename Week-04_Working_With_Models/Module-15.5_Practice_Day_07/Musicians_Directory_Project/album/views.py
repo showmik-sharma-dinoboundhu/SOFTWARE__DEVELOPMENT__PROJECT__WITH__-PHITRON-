@@ -35,23 +35,28 @@ def album(request):
 
 
 def edit_album(request, id):
-        # edit thing:
-        albums = models.album.objects.get(pk = id)
-        album_form = forms.albumForm(instance=albums)
+    # edit thing:
+    albums = models.album.objects.get(pk = id)
+    album_form = forms.albumForm(instance=albums)
     
     
-        if request.method == "POST":
-            album_form = forms.albumForm(request.POST, instance=albums)
-            if album_form.is_valid():                           album_form.save()
-            return redirect('homepage')
+    if request.method == "POST":
+        album_form = forms.albumForm(request.POST, instance=albums)
+        if album_form.is_valid():                           album_form.save()
+        return redirect('homepage')
+                   
                     
-                        
-            # # GET request hole:
-                # etar dorkar nai
-                    # else:
-                    # album_form = forms.albumForm()
-                        
-                        
-        return render(request, 'album.html', {"form" : album_form})
+        # # GET request hole:
+            # etar dorkar nai
+                # else:
+                # album_form = forms.albumForm()
+                    
+                    
+    return render(request, 'album.html', {"form" : album_form})
 
 
+def delete_post(request, id):
+    # delete things:
+    albums = models.album.objects.get(pk = id)
+    albums.delete()
+    return redirect ("homepage")
